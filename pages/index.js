@@ -8,8 +8,17 @@ import {
   Text,
 } from "@chakra-ui/core";
 import Head from "next/head";
+import useSWR from "swr";
+
+async function fetcher(...arg) {
+  const res = await fetch(...arg);
+
+  return res.json();
+}
 
 export default function Home() {
+  const { data } = useSWR("/api/github?username=spences10", fetcher);
+
   return (
     <div>
       <Head>
@@ -24,25 +33,25 @@ export default function Home() {
           <Box w="300px" p={5} ml={8} mb={3} borderWidth="1px" rounded="lg">
             <Stat>
               <StatLabel>
-                <Text fontSize="xl">GitHub Stars</Text>
+                <Text fontSize="xl">Github Stars</Text>
               </StatLabel>
-              <StatNumber>10</StatNumber>
+              <StatNumber>{data ? data.stars : "Loading"}</StatNumber>
             </Stat>
           </Box>
           <Box w="300px" p={5} ml={8} mb={3} borderWidth="1px" rounded="lg">
             <Stat>
               <StatLabel>
-                <Text fontSize="xl">GitHub Stars</Text>
+                <Text fontSize="xl">Github Followers</Text>
               </StatLabel>
-              <StatNumber>10</StatNumber>
+              <StatNumber>{data ? data.followers : "Loading"}</StatNumber>
             </Stat>
           </Box>
           <Box w="300px" p={5} ml={8} mb={3} borderWidth="1px" rounded="lg">
             <Stat>
               <StatLabel>
-                <Text fontSize="xl">GitHub Stars</Text>
+                <Text fontSize="xl">Repos Starred</Text>
               </StatLabel>
-              <StatNumber>10</StatNumber>
+              <StatNumber>{data ? data.starred : "Loading"}</StatNumber>
             </Stat>
           </Box>
         </Flex>
