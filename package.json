@@ -12,7 +12,7 @@
     "@octokit/rest": "18.0.9",
     "@saber2pr/types-github-api": "0.0.7",
     "@vercel/node": "1.8.4",
-    "framer-motion": "2.9.4",
+    "framer-motion": "2.9.5",
     "next": "10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
