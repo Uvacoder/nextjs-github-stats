@@ -8,17 +8,17 @@
     "start": "next start"
   },
   "dependencies": {
-    "@chakra-ui/core": "1.0.0-rc.8",
-    "@octokit/rest": "18.10.0",
+    "@chakra-ui/core": "0.8.0",
+    "@octokit/rest": "18.12.0",
     "@saber2pr/types-github-api": "0.0.7",
     "@vercel/node": "1.12.1",
-    "framer-motion": "4.1.17",
+    "framer-motion": "5.5.1",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "swr": "1.0.0"
+    "swr": "1.1.1"
   },
   "devDependencies": {
-    "@types/react": "17.0.20"
+    "@types/react": "17.0.37"
   }
 }
