@@ -1,4 +1,4 @@
-import { ChakraProvider } from "@chakra-ui/core";
+import { ChakraProvider } from "@chakra-ui/eact";
 
 function MyApp({ Component, pageProps }) {
   return (
