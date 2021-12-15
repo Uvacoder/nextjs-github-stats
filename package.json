@@ -8,7 +8,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@chakra-ui/core": "0.8.0",
+    "@chakra-ui/react": "1.0.0",
+    "@emotion/react": "11.0.0",
+    "@emotion/styled": "^11.0.0",
     "@octokit/rest": "18.12.0",
     "@saber2pr/types-github-api": "0.0.7",
     "@vercel/node": "1.12.1",
@@ -19,7 +21,6 @@
     "swr": "1.1.1"
   },
   "devDependencies": {
-    "@types/react": "17.0.37",
-    "@emotion/core": "10.1.1"
+    "@types/react": "17.0.37"
   }
 }
