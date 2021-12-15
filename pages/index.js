@@ -6,7 +6,7 @@ import {
   StatLabel,
   StatNumber,
   Text,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 import Head from "next/head";
 import useSWR from "swr";
 
@@ -17,7 +17,7 @@ async function fetcher(...arg) {
 }
 
 export default function Home() {
-  const { data } = useSWR("/api/github?username=spences10", fetcher);
+  const { data } = useSWR("/api/github?username=uvacoder", fetcher);
 
   return (
     <div>
