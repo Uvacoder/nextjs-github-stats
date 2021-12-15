@@ -27,7 +27,7 @@ export default function Home() {
       </Head>
       <Box as="main" mt={5}>
         <Heading as="h1" textAlign="center" size="2xl" mb={5}>
-          Scott's GitHub
+          Dr. Kimble's GitHub
         </Heading>
         <Flex justify="center">
           <Box w="300px" p={5} ml={8} mb={3} borderWidth="1px" rounded="lg">
